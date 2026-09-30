@@ -84,7 +84,7 @@ title: GitHub Copilot Links
 {% include_relative links/hooks.md %}
 </div>
 <hr class="section-sep">
-<div class="link-section" markdown="1">
+<div class="link-section" markdown="1" data-category-aliases="MS Learning Path,Labs">
 {% include_relative links/labs.md %}
 </div>
 <hr class="section-sep">
@@ -152,6 +152,7 @@ title: GitHub Copilot Links
       var opt = document.createElement('option');
       opt.value = name;
       opt.textContent = name;
+      opt.dataset.aliases = section.dataset.categoryAliases || '';
       select.appendChild(opt);
     }
   });
@@ -169,12 +170,13 @@ title: GitHub Copilot Links
     var normalized = normalizeCategoryName(rawValue);
 
     for (var i = 0; i < select.options.length; i++) {
-      var optionValue = select.options[i].value;
-      if (
-        optionValue.toLowerCase() === lower ||
-        normalizeCategoryName(optionValue) === normalized
-      ) {
-        return optionValue;
+      var option = select.options[i];
+      var names = [option.value].concat((option.dataset.aliases || '').split(','));
+      if (names.some(function (name) {
+        return name.toLowerCase() === lower ||
+          normalizeCategoryName(name) === normalized;
+      })) {
+        return option.value;
       }
     }
 
@@ -186,41 +188,45 @@ title: GitHub Copilot Links
     var category = select.value;
 
     sections.forEach(function (section) {
-var sectionName = section.dataset.sectionname || '';
+      var sectionName = section.dataset.sectionname || '';
       var categoryMatch = !category || sectionName === category;
+      var searchContent = section.querySelector('.section-body') || section;
+      var headingMatch = !!term && sectionName.toLowerCase().includes(term);
+      var show = categoryMatch && (!term || headingMatch ||
+        searchContent.textContent.toLowerCase().includes(term));
 
-      var show = false;
-      if (categoryMatch) {
-        var items = section.querySelectorAll('li');
-        var anyVisible = false;
-
-        items.forEach(function (item) {
-          var matches = !term || item.textContent.toLowerCase().includes(term);
-          item.style.display = matches ? '' : 'none';
-          if (matches) anyVisible = true;
+      // Keep matching nested links with their parent context and table headers.
+      section.querySelectorAll('li, tbody tr').forEach(function (item) {
+        var matches = !term || headingMatch ||
+          item.textContent.toLowerCase().includes(term);
+        item.style.display = matches ? '' : 'none';
+      });
+      section.querySelectorAll('table').forEach(function (table) {
+        var rows = table.querySelectorAll('tbody tr');
+        var headerMatch = table.querySelector('thead') &&
+          table.querySelector('thead').textContent.toLowerCase().includes(term);
+        if (headerMatch) {
+          rows.forEach(function (row) { row.style.display = ''; });
+        }
+        var hasVisibleRow = Array.from(rows).some(function (row) {
+          return row.style.display !== 'none';
         });
+        table.style.display = !term || headingMatch || headerMatch || hasVisibleRow ? '' : 'none';
+      });
 
-        show = !term || anyVisible;
-      } else {
-        // Hide all items in non-matching sections so text filter stays clean
-        section.querySelectorAll('li').forEach(function (item) {
-          item.style.display = '';
-        });
-      }
+      section.style.display = show ? '' : 'none';
 
-      section.style.display = (categoryMatch && show) ? '' : 'none';
-
-      // Auto-expand section when a specific category is selected via dropdown
-      if (category && categoryMatch && show) {
+      // Search results must be visible even when all categories started collapsed.
+      if ((category || term) && show) {
         var body = section.querySelector('.section-body');
         var arrow = section.querySelector('.section-arrow');
         if (body) body.style.display = '';
         if (arrow) arrow.textContent = '▼︎';
       }
 
-      var next = section.nextElementSibling;
-      if (next && next.classList.contains('section-sep')) {
-        next.style.display = (categoryMatch && show) ? '' : 'none';
+      var separator = section.previousElementSibling;
+      if (separator && separator.classList.contains('section-sep')) {
+        separator.style.display = show ? '' : 'none';
       }
     });
   }

@@ -2,10 +2,9 @@
 
 - <a target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP Documentation</a>
 - <a target="_blank" href="https://github.com/modelcontextprotocol/inspector">MCP Inspector Tool - Source</a>
-- <a target="_blank" href="https://owasp.org/www-project-mcp-top-10/">OWASP MCP Top 10</a>
 - <a target="_blank" href="https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=visualstudio">Using MCP Servers in Visual Studio</a>
 - <a target="_blank" href="https://code.visualstudio.com/api/extension-guides/ai/mcp">MCP developer guide</a> (VS Code)
-- <a target="_blank" href="https://microsoft.github.io/mcp-azure-security-guide/">OWASP MCP Top 10 Security Guidance for Azure</a> (MS DOcs)
+- <a target="_blank" href="https://microsoft.github.io/mcp-azure-security-guide/">OWASP MCP Top 10 Security Guidance for Azure</a> (Microsoft Docs)
 - <a target="_blank" href="https://owasp.org/www-project-mcp-top-10/">OWASP MCP Top 10</a> (OWASP)
 
 ### Labs

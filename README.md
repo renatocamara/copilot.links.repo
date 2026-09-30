@@ -19,12 +19,14 @@ The site uses the Cayman Jekyll theme, configured in `_config.yml`, with heading
 
 Each file in the `links/` directory holds one category of links in Markdown format. The `index.md` file stitches them all together into a single page, which Jekyll publishes to GitHub Pages automatically. Simple, boring, and it works perfectly — just like the best infrastructure should be.
 
+Use one `##` heading per category file for its dropdown label and collapse control, and `###` or deeper headings for subsections. Search covers category names, links, prose, and table rows (including model pricing), and expands matching categories. You can combine `?category=Billing&search=Claude` to share a filtered view.
+
 ## Adding or Updating Links
 
 Found a great new resource? Don't hoard it — add it!
 
 1. Edit the relevant category file in the `links/` directory (or create a new one for a new category).
-2. If you created a new file, add it to `index.md` with `{% include_relative links/<filename>.md %}`.
+2. If you created a new file, add it to `index.md` with `{% include_relative links/<filename>.md %}` inside a `.link-section` wrapper. When renaming a category, keep its old name in the wrapper's comma-separated `data-category-aliases` attribute so existing category URLs continue to work.
 3. Commit and push — a GitHub Action takes care of the rest and deploys the site automatically.
 
 That's it. No build steps, no npm install, no Docker containers. Just Markdown and a push. 🎉
