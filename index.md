@@ -4,10 +4,10 @@ title: GitHub Copilot Links
 ---
 
 <div id="filter-controls" style="margin: 1.5em 0 1em; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
-  <select id="category-filter" style="flex: 0 0 auto; padding: 10px 14px; font-size: 1em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer;">
+  <select id="category-filter" style="flex: 0 0 auto; padding: 10px 14px; font-size: 1em; border-width: 1px; border-style: solid; border-radius: 6px; cursor: pointer;">
     <option value="">All Categories</option>
   </select>
-  <input type="text" id="link-filter" placeholder="🔍 Search these links for…" style="flex: 1 1 200px; padding: 10px 14px; font-size: 1em; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+  <input type="text" id="link-filter" placeholder="🔍 Search these links for…" style="flex: 1 1 200px; padding: 10px 14px; font-size: 1em; border-width: 1px; border-style: solid; border-radius: 6px; box-sizing: border-box;">
 </div>
 
 ---
@@ -248,7 +248,7 @@ var sectionName = section.dataset.sectionname || '';
     h2.style.userSelect = 'none';
     var arrow = document.createElement('span');
     arrow.className = 'section-arrow';
-    arrow.style.cssText = 'font-size:0.7em; margin-left:8px; color:#555; vertical-align:middle;';
+    arrow.style.cssText = 'font-size:0.7em; margin-left:8px; color:inherit; vertical-align:middle;';
     arrow.textContent = '▶︎';
     h2.appendChild(arrow);
 

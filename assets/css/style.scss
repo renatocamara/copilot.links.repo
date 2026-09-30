@@ -1,32 +1,61 @@
 ---
 ---
 
-@import "jekyll-theme-cayman";
+@import "jekyll-theme-hacker";
 
-.page-header .btn[href="{{ site.github.repository_url }}"] {
+header .btn-github {
   display: none;
 }
 
-.main-content h1 {
+.container {
+  max-width: 1100px;
+}
+
+#category-filter,
+#link-filter,
+#meme-select {
+  background: #202020;
+  color: #eaeaea;
+  border-color: #777;
+}
+
+#link-filter::placeholder {
+  color: #aaa;
+}
+
+#meme-caption {
+  color: #aaa;
+}
+
+#main_content {
+  overflow-wrap: break-word;
+}
+
+#main_content table {
+  display: block;
+  overflow-x: auto;
+}
+
+#main_content h1 {
   font-size: 2.3rem;
 }
 
-.main-content h2 {
+#main_content h2 {
   font-size: 1.9rem;
 }
 
-.main-content h3 {
+#main_content h3 {
   font-size: 1.55rem;
 }
 
-.main-content h4 {
+#main_content h4 {
   font-size: 1.3rem;
 }
 
-.main-content h5 {
+#main_content h5 {
   font-size: 1.1rem;
 }
 
-.main-content h6 {
+#main_content h6 {
   font-size: 1rem;
 }
