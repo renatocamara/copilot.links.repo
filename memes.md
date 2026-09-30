@@ -5,14 +5,14 @@ permalink: /memes/
 ---
 
 <div style="margin: 1.5em 0 1em; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
-  <select id="meme-select" style="flex: 1 1 200px; padding: 10px 14px; font-size: 1em; border-width: 1px; border-style: solid; border-radius: 6px; cursor: pointer;">
+  <select id="meme-select" style="flex: 1 1 200px; padding: 10px 14px; font-size: 1em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer;">
     <option value="">-- Select a Meme --</option>
   </select>
 </div>
 
 <div id="meme-display" style="text-align: center; margin-top: 1.5em; display: none;">
   <img id="meme-image" src="" alt="" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.15);" />
-  <p id="meme-caption" style="margin-top: 0.75em; font-style: italic;"></p>
+  <p id="meme-caption" style="margin-top: 0.75em; font-style: italic; color: #555;"></p>
 </div>
 
 <script>
