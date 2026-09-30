@@ -3,6 +3,10 @@
 
 @import "jekyll-theme-cayman";
 
+.page-header .btn[href="{{ site.github.repository_url }}"] {
+  display: none;
+}
+
 .main-content h1 {
   font-size: 2.3rem;
 }
