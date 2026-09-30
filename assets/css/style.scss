@@ -1,33 +1,28 @@
 ---
 ---
 
-@import "minima";
+@import "jekyll-theme-cayman";
 
-/* Make headings stand out a bit more across the site */
-h2 {
-  color: #0b3d91;
-}
-
-h1 {
+.main-content h1 {
   font-size: 2.3rem;
 }
 
-h2 {
+.main-content h2 {
   font-size: 1.9rem;
 }
 
-h3 {
+.main-content h3 {
   font-size: 1.55rem;
 }
 
-h4 {
+.main-content h4 {
   font-size: 1.3rem;
 }
 
-h5 {
+.main-content h5 {
   font-size: 1.1rem;
 }
 
-h6 {
+.main-content h6 {
   font-size: 1rem;
 }

@@ -5,6 +5,10 @@ on:
     branches:
       - main
     paths:
+      - '_config.yml'
+      - 'assets/**'
+      - '_includes/**'
+      - '.github/workflows/deploy-pages.yml'
       - 'links/**'
       - 'index.md'
       - 'images/**'

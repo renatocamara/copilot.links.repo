@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: default
 title: My Favorite AI Memes
 permalink: /memes/
 ---
-
-<style>.site-header { display: none !important; }</style>
 
 <div style="margin: 1.5em 0 1em; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
   <select id="meme-select" style="flex: 1 1 200px; padding: 10px 14px; font-size: 1em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer;">

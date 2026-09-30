@@ -15,6 +15,8 @@ View the live page at: [https://renatocamara.github.io/copilot.links.repo/](http
 
 ## How It Works
 
+The site uses the Cayman Jekyll theme, configured in `_config.yml`, with heading styles in `assets/css/style.scss`.
+
 Each file in the `links/` directory holds one category of links in Markdown format. The `index.md` file stitches them all together into a single page, which Jekyll publishes to GitHub Pages automatically. Simple, boring, and it works perfectly — just like the best infrastructure should be.
 
 ## Adding or Updating Links
