@@ -34,6 +34,16 @@ Instructions for setting up a full GitHub EMU account, creating Enterprise Teams
 
 ### Enterprise Management
 
+#### September 2026 Governance Updates
+
+- <a target="_blank" href="https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/">Enterprise-managed agent permissions</a> (September 9) - centrally deny, require approval for, or allow shell commands, file operations, and network domains. Applies to Copilot app, CLI, and VS Code sessions using Agent Host.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/">Managed settings validator</a> (September 25) - validate managed settings, team mappings, and team settings files in enterprise AI controls before relying on their enforcement.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/">Content exclusions in Copilot app and CLI</a> (September 2) - review enterprise, organization, and repository exclusion policies during onboarding. See <a target="_blank" href="https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/content-exclusion">current content-exclusion support and limitations</a>.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/">Enterprise-managed sandbox policies in JetBrains</a> (September 8; public preview) - check preview availability and managed restrictions for your IDE.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/">Local sandboxing in Copilot app</a> (September 23; public preview) - off by default, configured per project, and separate from CLI sandbox settings.
+
+#### Earlier Management Resources
+
 - <a target="_blank" href="https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/">Deploy managed Copilot settings via MDM in VS Code and CLI</a> (GitHub Change Log - July 8, 2026)
     > Note: Some of the settings let you disable Bypass Permissions and set allowed marketplaces
 

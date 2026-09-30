@@ -1,5 +1,13 @@
 ## Copilot CLI
 
+### Official Guides
+
+- <a target="_blank" href="https://docs.github.com/en/copilot/get-started/cli-quickstart">Copilot CLI quickstart</a> (GitHub Docs) - installation, authentication, and first interactive or scripted prompts.
+- <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference">Copilot CLI command reference</a> (GitHub Docs) - CLI options and slash commands; use `/help` to check your installed version.
+- <a target="_blank" href="https://docs.github.com/en/copilot/concepts/agents/copilot-cli/context-management">Managing context in Copilot CLI</a> (GitHub Docs) - `/context`, `/compact`, and long-session behavior.
+
+### Courses and Articles
+
 - <a target="_blank" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/">GitHub Copilot CLI for Beginners</a> (GitHub Course- April 2026)
 - <a target="_blank" href="https://github.com/features/copilot/cli">Install GHCP CLI</a>
 - <a target="_blank" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/">CLI - Interactive vs. Non-Interactive Mode</a> (GitHub Blog Apr 30, 2026)

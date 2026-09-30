@@ -1,5 +1,7 @@
 ## Articles and Blogs
 
+Articles and videos below reflect their publication dates. Third-party analysis is not official product guidance, and some publishers may require sign-in or a subscription.
+
 ### Recurring Interesting Posts
 - <a target="_blank" href="https://githubnext.com/posts/">GitHub VNext Blog</a>
 

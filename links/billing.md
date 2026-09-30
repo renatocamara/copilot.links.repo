@@ -1,6 +1,12 @@
 ## Billing
 
 ### Recent News
+
+- <a target="_blank" href="https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/">Copilot budget-increase requests</a> (September 16, 2026; GA) - Business/Enterprise usage-based billing; **not available for enterprises with managed users**. Owners or billing managers can approve, adjust, or deny requests.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/">Auto cost and quality tiers</a> (September 14, 2026) - efficiency, balance, and intelligence in VS Code, CLI, and Copilot app. Billing follows the selected model, not a fixed tier price; paid-plan Auto usage receives a 10% model-cost discount.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/">Expiration dates for individual user budgets</a> (September 1, 2026; GA) - time-bound Business/Enterprise overrides revert to the next applicable budget when they expire.
+- <a target="_blank" href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/">OpenTelemetry in Copilot app</a> (September 22, 2026) - trace agent activity through enterprise-managed telemetry. Use billing reports for charges; traces are not invoices.
+
 - <a target="_blank" href="https://techcommunity.microsoft.com/blog/azurearchitectureblog/optimizing-github-copilot-cost-in-the-usage-based-billing-era/4534171">Optimizing GitHub Copilot Cost in the Usage-Based Billing Era</a> (MS Blog - July 7, 2026)
 - <a target="_blank" href="https://github.blog/changelog/2026-07-01-set-ai-credit-session-limits-in-copilot-cli-and-sdk/">Set AI credit session limits in Copilot CLI and SDK</a> (GitHub Blog - July 1, 2026)
 - <a target="_blank" href="https://github.blog/changelog/2026-06-30-per-user-ai-credit-budgets-available-for-cost-centers/">Per-user AI credit budgets available for cost centers</a> (GitHub Blog - June 30, 2026)
@@ -38,7 +44,7 @@
 
 - <a target="_blank" href="https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises">Usage-based billing for organizations and enterprises</a> (GitHub Docs Apr 27, 2026)
 - <a target="_blank" href="https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/prepare-for-usage-based-billing">Preparing your organization for usage-based billing</a> (GitHub Docs)
-- <a target="_blank" href="https://support.github.com/product-guides/github-copilot/get-started/understanding-copilot-budgeting">Understanding Copilot budgeting</a> (GitHub Docs)
+- <a target="_blank" href="https://support.github.com/product-guides/github-copilot/get-started/understanding-copilot-budgeting">Understanding Copilot budgeting</a> (GitHub Support; redirects to sign-in, account access may be required). Public alternative: <a target="_blank" href="https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets">Copilot budget controls</a>.
 - <a target="_blank" href="https://learn.github.com/event/bb786fa6-d94c-4dd9-9917-11eee58265ef">GitHub Billing Platform Controls</a> (GitHub Docs)
 - <a target="_blank" href="https://wellarchitected.github.com/library/governance/recommendations/managing-ai-credits/">Managing AI credits</a> (GitHub Well-Architected Support Article)
 - <a target="_blank" href="https://github.com/colinbeales/gh-ulb">gh-ulb — A GitHub CLI Extension for setting GHCP User-Level Budgets</a> (GH CLI Add-in)

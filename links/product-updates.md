@@ -11,6 +11,8 @@
 
 ### GitHub Copilot Changelog - September 2026
 
+**Last reviewed: September 30, 2026.** This is a dated announcement archive, not a guarantee of current availability. Check the linked product documentation for rollout, plan, policy, preview, and retirement conditions; historical launch announcements remain here for reference.
+
 - <a target="_blank" href="https://github.blog/changelog/month/09-2026/">Complete September 2026 GitHub Changelog archive</a>
 - September 30: <a target="_blank" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app">HydraFusion in VS Code and the GitHub Copilot app</a>
 - September 29: <a target="_blank" href="https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot">GPT-6.1 Sol in GitHub Copilot</a>
