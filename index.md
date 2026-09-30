@@ -5,7 +5,7 @@ title: GitHub Copilot Links
 
 <style>.site-header { display: none !important; }</style>
 
-Lyle's curated collection of GitHub Copilot links and resources
+Renato Camara's curated collection of GitHub Copilot links and resources
 
 <div id="filter-controls" style="margin: 1.5em 0 1em; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
   <select id="category-filter" style="flex: 0 0 auto; padding: 10px 14px; font-size: 1em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer;">
@@ -137,7 +137,7 @@ Lyle's curated collection of GitHub Copilot links and resources
 <hr class="section-sep">
 <div class="link-section" markdown="1">
 <br/>
-<a href="https://lluppesms.github.io/copilot.links.repo/memes/" style="display: inline-block; padding: 12px 18px; background: #f0f0f0; border-radius: 6px; text-decoration: none; color: #333; font-weight: bold;">😄 Check out my favorite AI memes!</a>
+<a href="https://renatocamara.github.io/copilot.links.repo/memes/" style="display: inline-block; padding: 12px 18px; background: #f0f0f0; border-radius: 6px; text-decoration: none; color: #333; font-weight: bold;">😄 Check out my favorite AI memes!</a>
 </div>
 
 

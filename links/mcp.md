@@ -11,8 +11,8 @@
 ### Labs
 - <a target="_blank" href="https://github.com/ms-mfg-community/day-in-the-life-copilot-lab/blob/main/labs/lab05.md">MCP Hands-On Lab</a> 
     > Cody's Lab on using MCP servers
-- <a target="_blank" href="https://github.com/lluppesms/simple.mcp.demo">Simple MCP Server Lab</a> 
-    > Lyle's Lab on building a very simple MCP server using C#
+- <a target="_blank" href="https://github.com/renatocamara/simple.mcp.demo">Simple MCP Server Lab</a> 
+    > Renato Camara's Lab on building a very simple MCP server using C#
 - <a target="_blank" href="https://azure-samples.github.io/sherpa/">MCP Security Summit Workshop</a>
     > Great hands-on workshop that walks you through how to secure MCP Servers in Azure using APIM, defensive postures, monitoring, etc.
 

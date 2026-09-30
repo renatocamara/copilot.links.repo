@@ -1,7 +1,7 @@
 # copilot.links.repo
 
 > *"The best link is the one you can actually find when you need it."*  
-> — Lyle, probably at 11pm before a class
+> — Renato Camara, probably at 11pm before a class
 
 ## Why Does This Exist?
 
@@ -11,7 +11,7 @@ This repo is the solution to that chaos. It's a curated, organized collection of
 
 It covers cheat sheets, learning paths, FAQs, agent workflows, MCP resources, model info, skills, and more — all in one tidy place. No more napkins.
 
-View the live page at: [https://lluppesms.github.io/copilot.links.repo/](https://lluppesms.github.io/copilot.links.repo/)
+View the live page at: [https://renatocamara.github.io/copilot.links.repo/](https://renatocamara.github.io/copilot.links.repo/)
 
 ## How It Works
 
