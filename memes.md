@@ -10,6 +10,8 @@ permalink: /memes/
   </select>
 </div>
 
+<p id="meme-error" role="alert" hidden></p>
+
 <div id="meme-display" style="text-align: center; margin-top: 1.5em; display: none;">
   <img id="meme-image" src="" alt="" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.15);" />
   <p id="meme-caption" style="margin-top: 0.75em; font-style: italic; color: #555;"></p>
@@ -18,14 +20,19 @@ permalink: /memes/
 <script>
   (function () {
     var baseUrl = '{{ site.baseurl }}';
-    var tsvUrl = baseUrl + '/ImageList.tsv';
+    // Each deployment gets a fresh manifest URL instead of a cached older list.
+    var tsvUrl = baseUrl + '/ImageList.tsv?v={{ site.time | date: "%s" }}';
     var select = document.getElementById('meme-select');
+    var error = document.getElementById('meme-error');
     var display = document.getElementById('meme-display');
     var img = document.getElementById('meme-image');
     var caption = document.getElementById('meme-caption');
 
-    fetch(tsvUrl)
-      .then(function (res) { return res.text(); })
+    fetch(tsvUrl, { cache: 'no-cache' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Meme list request failed: HTTP ' + res.status);
+        return res.text();
+      })
       .then(function (text) {
         var lines = text.trim().split('\n');
         // skip header row, collect entries
@@ -51,6 +58,8 @@ permalink: /memes/
       })
       .catch(function (err) {
         console.error('Failed to load ImageList.tsv:', err);
+        error.textContent = 'The meme list could not be loaded. Please reload the page to try again.';
+        error.hidden = false;
       });
 
     select.addEventListener('change', function () {
