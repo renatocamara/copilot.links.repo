@@ -13,17 +13,17 @@
 
 - <a target="_blank" href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/">Copilot Code Reviews for Azure Repos Preview</a> (Public Preview - August 26 2026)
   - <a target="_blank" href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos/">Copilot Code Reviews for Azure Repos Announcement</a> (Technical Preview - June 2026)
-   > Note: This was released on August 26 and will roll out to all customers over the next 2-3 weeks. 
+   > **Checked September 30, 2026:** The August announcement opened the public preview. The current <a target="_blank" href="https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops">setup documentation</a> still labels the feature a limited preview and warns that capabilities roll out in stages. Confirm availability and enablement in your organization rather than relying on the original rollout estimate.
 
-   > Note: Pricing will be based on tokens used (via AI Credits), charged directly to the Azure Subscription associated with the AzDO Organization, not pulled from an existing GitHub Copilot plan.
+   > Usage is billed through the Azure subscription linked to the Azure DevOps organization and appears in Azure Cost Management. Consult the setup documentation for current billing details; do not assume your GitHub Copilot plan's included credits cover Azure Repos reviews.
 - <a target="_blank" href="https://devblogs.microsoft.com/devops/copilot-autofix-for-github-advanced-security-for-azure-devops/">Copilot Autofix for GitHub Advanced Security for Azure DevOps - Blog</a> (Technical Preview Feature - June 2026)
 - <a target="_blank" href="https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning-autofix?view=azure-devops">Copilot Autofix for Code Scanning - Documentation</a> (Technical Preview Feature - June 2026)
 
 
 ### Migrating to GitHub
 
-- <a target="_blank" href="https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops">Enterprise Live Migrations</a> (Technical Preview Feature - June 2026)
-  > Note: This will be released to all customers as a public preview feature on Monday August 31
+- <a target="_blank" href="https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops">Enterprise Live Migrations</a> (preview; checked September 30, 2026)
+  > ELM provides CLI and portal experiences for continuous synchronization and controlled cutover from **Azure DevOps Services to GitHub Enterprise Cloud with data residency**. Azure DevOps Server repositories must first migrate to Azure DevOps Services. ELM support in the Azure DevOps Remote MCP Server is also in preview. See the linked documentation for prerequisites and current limits.
 - <a target="_blank" href="https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/">How Microsoft is migrating repositories to GitHub</a> (MS Dev Blog - June 2026)
 - <a target="_blank" href="https://docs.github.com/en/migrations/ado">Migrating from Azure DevOps to GitHub</a> (GitHub Docs)
 - <a target="_blank" href="https://devblogs.microsoft.com/all-things-azure/azure-devops-to-github-migration-playbook-unlocking-agentic-devops/">Azure DevOps to GitHub Migration Playbook: Unlocking Agentic DevOps</a> (Microsoft Dev Blogs)

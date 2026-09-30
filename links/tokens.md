@@ -1,7 +1,7 @@
 ## Tokens
 
 ### Token Costs
-- <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">Models and model pricing for GitHub Copilot</a> (GitHub Docs April, 2026) 
+- <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">Models and model pricing for GitHub Copilot</a> (GitHub Docs; checked September 30, 2026)
 - <a target="_blank" href="https://github.com/devartifex/copilot-cost">See your GitHub Copilot CLI tokens and estimated spend at a glance</a><br />
 Add-in for GHCP CLI to view cost live (repo developed by Microsoft CSA Gabriel Mercuri)
 - <a target="_blank" href="https://white-cliff-095e8700f.7.azurestaticapps.net/ubb-aic-sizing-guide.html">How to Size AI Credit Budgets per User</a>
@@ -27,7 +27,9 @@ Export your usage via the GHCP API (must be a Billing admin...), then import tha
 - <a target="_blank" href="https://github.com/aj-enns/token-economy">Token Economy: Optimizing GitHub Copilot Chat & Agents under Usage-Based Billing</a><br />(Repo full of tips by a MS CSA - May 2026)
 - <a target="_blank" href="https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights#github-copilot">How to Monitor AI coding agents with Grafana</a> (MS Learn)
 - <a target="_blank" href="https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/">Improving token efficiency in GitHub Agentic Workflows</a> (GitHub Blog May 7, 2026)
-    > The main focus of the article is the "agentic workflow" and how can they reduce token usage there. One of the options discussed is to limit the number of MCP servers because all that info is put into the system prompt every time, consuming tokens parsing that prompt every time, so they replaced some of those with straight CLI calls. Another topic was how not all tokens are the same because of the cost per model, so they use an "Effective Tokens" formula to normalize consumption. If you see 1M tokens consumed, it's important to know which model used those tokens because Opus costs 25x more than Haiku.
+    > This article describes token optimizations for GitHub Agentic Workflows, including replacing some MCP interactions with CLI calls and normalizing consumption by model cost. Tool-definition overhead depends on the client and its tool-loading behavior; not every MCP setup sends every tool definition on every request.
+
+    > **Pricing example (September 30, 2026):** At the published default rates, Claude Opus 5.5 costs $4 per million uncached input tokens and $20 per million output tokens; Claude Haiku 4.5 costs $1 and $5 respectively. For equal uncached input and output counts, that is 4 times the cost, not a universal "Opus versus Haiku" multiplier. Cached-input rates differ by 2 times ($0.20 vs $0.10), and cache-write rates by 4 times ($5 vs $1.25). Actual task cost also depends on token counts, caching, and retries. See <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">current GitHub pricing</a>.
 - <a target="_blank" href="https://www.youtube.com/watch?v=u57EnkQaUTY">What is Prompt Caching? Optimize LLM Latency with AI Transformers</a> (IBM YouTube Channel - Feb 2026)
 - <a target="_blank" href="https://techcommunity.microsoft.com/blog/azurearchitectureblog/optimizing-github-copilot-cost-in-the-usage-based-billing-era/4534171">Solution Optimization for GitHub Copilot Workshop</a>
     > Ask your CSAM to schedule this workshop if you have Microsoft Unified support!

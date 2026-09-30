@@ -3,7 +3,14 @@
 - <a target="_blank" href="https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/">Copilot Memory has more controls for deletion, scope, and the Copilot CLI</a>
 - <a target="_blank" href="https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/copilot-memory">Managing and curating Copilot Memory </a> (GitHub Docs)
 
-> Note: as of May 12, 2026, these memories are stored at the REPO level, so they are shared.  On May 26, 2026, there will be a new feature enabled that will let you store them at the USER level.  There are policies the enable/disable these features, and individuals can disable for themselves also. Docs with full details will be updated soon.
+### Memory Scope and Controls (checked September 30, 2026)
+
+- **User-level preferences** are visible only to you and can be used across your repositories. Review or delete them in your personal Copilot Memory settings.
+- **Repository-level facts** are shared with repository contributors. Repository owners can review, delete, or disable them under **Settings > Copilot > Memory**.
+- Disabling repository memory stops repository facts from being stored or read; it does not delete existing facts or disable user-level preferences.
+- In Copilot CLI, use `/memory on`, `/memory off`, and `/memory show` to manage the persisted setting. Organization and enterprise policies can affect availability.
+
+The May 26 announcement above documents these controls as released functionality, not a future rollout.
 
 ---
 

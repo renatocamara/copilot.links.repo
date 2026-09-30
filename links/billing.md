@@ -7,9 +7,9 @@
 - <a target="_blank" href="https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers/">Cost centers now support enterprise teams</a> (GitHub Blog - June 25, 2026)
 - <a target="_blank" href="https://github.blog/changelog/2026-07-02-cost-centers-now-support-included-usage-caps/">Included usage caps for cost centers: Helps admins limit how much of the shared enterprise AI Credit pool a cost center can draw for improved governance.</a> (GitHub Blog - July 2, 2026)
 
-    > **NOTE:** As of July 2, 2026 -- Usage caps for cost centers is available in the API only at this point -- UI will likely be available mid to late July.
+    > **Current guidance (September 30, 2026):** Included usage controls limit a cost center's draw from the shared AI credit pool. Administrators can view the cap and consumption on the cost center home page. See <a target="_blank" href="https://docs.github.com/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets">Budgets for usage-based billing</a> and <a target="_blank" href="https://docs.github.com/en/billing/how-tos/set-up-budgets">budget setup instructions</a>.
 
-    > **TIP:**: Cost center AI credit pools do not reserve credits per user, they limit a cost center’s draw from the shared enterprise AI Credit pool based on attributed licenses. This feature works best when every licensed user is in a cost center, and should ideally be enabled at the beginning of the month since changes only apply going forward.
+    > **TIP:** Included usage controls are different from cost center budgets, which cap metered charges after the shared pool is exhausted. User-level budgets cap each user's consumption across both phases. License additions or upgrades increase the included cap immediately; removals or downgrades decrease it at the next billing cycle. Moving a licensed member between two cost centers with included usage controls recalculates both caps at the next billing cycle.
 
 ---
 
@@ -52,6 +52,11 @@
 
 Prices are in USD per 1 million tokens. This snapshot shows default-tier pricing; models with long-context tiers have higher rates above their token thresholds.
 
+> **Availability is separate from pricing.** A listed rate does not guarantee access in your plan, client, or organization. Consult <a target="_blank" href="https://docs.github.com/en/copilot/reference/ai-models/supported-models">supported models</a> and the retirement notices below; a pricing page may retain entries that are no longer selectable.
+
+- **October 2 retirements:** Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7. <a target="_blank" href="https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/">Migration notice</a>.
+- **October 19 retirements:** Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini, and Grok 4.5. <a target="_blank" href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/">Migration notice</a>.
+
 | Provider | Model | Category | Input | Cached Input | Cache Write | Output |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
 | OpenAI | GPT-5 mini | Lightweight | $0.25 | $0.025 | — | $2.00 |
@@ -91,6 +96,10 @@ Prices are in USD per 1 million tokens. This snapshot shows default-tier pricing
 | Moonshot AI | Kimi K3 | Powerful | $3.00 | $0.30 | — | $15.00 |
 
 Source: <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">Models and pricing for GitHub Copilot</a> (GitHub Docs)
+
+- **Cache Write legend:** A dash means no separate cache-write rate is listed in the source; it does not mean the interaction is free.
+- **Promotional pricing:** GitHub lists Gemini 3.6, 3.7, and 3.8 Flash at $0.75 input, $0.075 cached input, and $3.75 output per million tokens through **December 31, 2026**. The earlier model retirement dates above still apply; the promotion does not extend availability.
+- **AI credits:** 1 AI credit equals $0.01 USD. An interaction's cost depends on its actual input, output, cached-input, and applicable cache-write tokens. See the source for long-context thresholds and rates.
 
 ---
 
