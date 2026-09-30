@@ -16,8 +16,6 @@ Renato Camara's curated collection of GitHub Copilot links and resources
 
 ---
 
-> **NOTE! As of September 15, 2026, these links are no longer being maintained...!  They are accurate to that point, but no further information will be added this this collection of links after that date.  At some point in the near future, this site will be taken down!**
-
 <hr class="section-sep">
 <div class="link-section" markdown="1">
 {% include_relative links/product-updates.md %}
@@ -311,4 +309,3 @@ var sectionName = section.dataset.sectionname || '';
   })();
 })();
 </script>
-
