@@ -48,24 +48,47 @@
 ### What is my Cost?
 - <a href="/copilot.links.repo/?category=tokens">How can I see how much this costs???</a>  (More links about tokens and optimization)
 
-### Model Pricing Snapshot (as of July 21, 2026)
+### Model Pricing Snapshot (as of September 30, 2026)
 
-| Model | Category | Input | Cached Input | Cached write | Output |
-| --- | --- | --- | --- | --- | --- |
-| GPT-5.6 Sol | Powerful | $5.00 | $0.50 |  | $30.00 |
-| GPT-5.5 | Powerful | $5.00 | $0.50 |  | $30.00 |
-| Claude Opus 4.6 | Powerful | $5.00 | $0.50 | $6.25 | $25.00 |
-| GPT-5.6 Terra | Versatile | $2.50 | $0.25 |  | $15.00 |
-| Claude Sonnet 4.6 | Versatile | $3.00 | $0.30 | $3.75 | $15.00 |
-| GPT-5.3-Codex | Powerful | $1.75 | $0.175 |  | $14.00 |
-| Gemini 2.5 Pro | Powerful | $1.25 | $0.125 |  | $10.00 |
-| Gemini 3.5 Flash | Lightweight | $1.50 | $0.15 |  | $9.00 |
-| GPT-5.6 Luna | Lightweight | $1.00 | $0.10 |  | $6.00 |
-| Claude Haiku 4.5 | Versatile | $1.00 | $0.10 | $1.25 | $5.00 |
-| MAI-Code-1-Flash | Lightweight | $0.75 | $0.075 |  | $4.50 |
-| Kimi K2.7 Code | Versatile | $0.95 | $0.19 |  | $4.00 |
-| GPT-5 mini | Lightweight | $0.25 | $0.025 |  | $2.00 |
-| Raptor mini | Versatile | $0.25 | $0.025 |  | $2.00 |
+Prices are in USD per 1 million tokens. This snapshot shows default-tier pricing; models with long-context tiers have higher rates above their token thresholds.
+
+| Provider | Model | Category | Input | Cached Input | Cache Write | Output |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| OpenAI | GPT-5 mini | Lightweight | $0.25 | $0.025 | — | $2.00 |
+| OpenAI | GPT-5.3-Codex | Powerful | $1.75 | $0.175 | — | $14.00 |
+| OpenAI | GPT-5.4 | Versatile | $2.50 | $0.25 | — | $15.00 |
+| OpenAI | GPT-5.4 mini | Lightweight | $0.75 | $0.075 | — | $4.50 |
+| OpenAI | GPT-5.4 nano | Lightweight | $0.20 | $0.02 | — | $1.25 |
+| OpenAI | GPT-5.5 | Powerful | $5.00 | $0.50 | — | $30.00 |
+| OpenAI | GPT-5.6 Luna | Lightweight | $0.20 | $0.02 | $0.25 | $1.20 |
+| OpenAI | GPT-5.6 Sol | Powerful | $4.00 | $0.40 | $5.00 | $20.00 |
+| OpenAI | GPT-5.6 Terra | Versatile | $2.00 | $0.20 | $2.50 | $12.00 |
+| OpenAI | GPT-6 Astra | Powerful | $10.00 | $1.00 | $12.50 | $50.00 |
+| OpenAI | GPT-6 Luna | Lightweight | $0.10 | $0.01 | $0.125 | $0.50 |
+| OpenAI | GPT-6 Sol | Powerful | $2.00 | $0.20 | $2.50 | $10.00 |
+| OpenAI | GPT-6.1 Sol | Powerful | $2.00 | $0.10 | $2.50 | $10.00 |
+| Anthropic | Claude Haiku 4.5 | Versatile | $1.00 | $0.10 | $1.25 | $5.00 |
+| Anthropic | Claude Sonnet 4 | Versatile | $3.00 | $0.30 | $3.75 | $15.00 |
+| Anthropic | Claude Sonnet 4.6 | Versatile | $3.00 | $0.30 | $3.75 | $15.00 |
+| Anthropic | Claude Opus 4.7 | Powerful | $5.00 | $0.50 | $6.25 | $25.00 |
+| Anthropic | Claude Opus 4.8 | Powerful | $5.00 | $0.50 | $6.25 | $25.00 |
+| Anthropic | Claude Opus 4.8 (fast mode preview) | Powerful | $10.00 | $1.00 | $12.50 | $50.00 |
+| Anthropic | Claude Opus 5 | Powerful | $5.00 | $0.50 | $6.25 | $25.00 |
+| Anthropic | Claude Opus 5.5 | Powerful | $4.00 | $0.20 | $5.00 | $20.00 |
+| Anthropic | Claude Sonnet 5 | Versatile | $2.00 | $0.20 | $2.50 | $10.00 |
+| Anthropic | Claude Sonnet 5.5 | Versatile | $2.00 | $0.20 | $2.50 | $10.00 |
+| Anthropic | Claude Fable 5 | Powerful | $10.00 | $1.00 | $12.50 | $50.00 |
+| Anthropic | Claude Fable 5.1 | Powerful | $10.00 | $0.25 | $12.50 | $50.00 |
+| Google | Gemini 3.5 Flash | Lightweight | $1.50 | $0.15 | — | $9.00 |
+| Google | Gemini 3.6 Flash | Versatile | $0.75 | $0.075 | — | $3.75 |
+| Google | Gemini 3.7 Flash | Versatile | $0.75 | $0.075 | — | $3.75 |
+| Google | Gemini 3.8 Flash | Versatile | $0.75 | $0.075 | — | $3.75 |
+| Microsoft | MAI-Code-1.1-Flash | Lightweight | $0.20 | $0.02 | — | $1.20 |
+| xAI | Grok 4.5 | Versatile | $2.00 | $0.50 | — | $6.00 |
+| xAI | Grok 4.6 | Versatile | $2.00 | $0.50 | — | $6.00 |
+| xAI | Grok 4.7 | Versatile | $2.00 | $0.50 | — | $6.00 |
+| Moonshot AI | Kimi K2.7 Code | Versatile | $0.95 | $0.19 | — | $4.00 |
+| Moonshot AI | Kimi K3 | Powerful | $3.00 | $0.30 | — | $15.00 |
 
 Source: <a target="_blank" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">Models and pricing for GitHub Copilot</a> (GitHub Docs)
 
