@@ -13,6 +13,8 @@ on:
       - 'index.md'
       - 'images/**'
       - 'memes.md'
+      - 'memes/**'
+      - 'ImageList.tsv'
   workflow_dispatch:
 
 permissions:

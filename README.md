@@ -30,4 +30,10 @@ Found a great new resource? Don't hoard it — add it!
 3. Commit and push — a GitHub Action takes care of the rest and deploys the site automatically.
 
 That's it. No build steps, no npm install, no Docker containers. Just Markdown and a push. 🎉
+
+## Adding Memes
+
+Add the image to `memes/` and a tab-separated filename and description to `ImageList.tsv`. The gallery sorts entries by description, and changes to either the images or the list trigger a Pages deployment.
+
+The three terminal-style images labeled "(Original)" use original captions and artwork. To regenerate their PNG files on Windows, run `.\scripts\generate-original-memes.ps1` in PowerShell. No external images or templates are used.
 # copilot.links.repo
